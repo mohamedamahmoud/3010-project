@@ -1,0 +1,250 @@
+  //@author MOhammed-Yasir Suara and Henry Wilson
+  int pinA = 2;
+  int pinB = 3;
+  int pinC = 4;
+  int pinD = 5;
+  int pinE = 6;
+  int pinF = 7;
+  int pinG = 8;
+  int D1 = 9;
+  int D2 = 10;
+  int D3 = 11;
+  int D4 = 12;
+  
+  // the setup routine runs once when you press reset:
+  void setup() {                
+    // initialize the digital pins as outputs.
+    pinMode(pinA, OUTPUT);     
+    pinMode(pinB, OUTPUT);     
+    pinMode(pinC, OUTPUT);     
+    pinMode(pinD, OUTPUT);     
+    pinMode(pinE, OUTPUT);     
+    pinMode(pinF, OUTPUT);     
+    pinMode(pinG, OUTPUT);   
+    pinMode(D1, OUTPUT);  
+    pinMode(D2, OUTPUT);  
+    pinMode(D3, OUTPUT);  
+    pinMode(D4, OUTPUT);  
+  }
+  
+  void loop() {
+    digitalWrite(pinA, HIGH);   
+    digitalWrite(pinB, HIGH);   
+    digitalWrite(pinC, HIGH);   
+    digitalWrite(pinD, HIGH);   
+    digitalWrite(pinE, HIGH);   
+    digitalWrite(pinF, HIGH);   
+    digitalWrite(pinG, HIGH);
+    
+    digitalWrite(D1, LOW);
+    digitalWrite(D2, LOW);
+    digitalWrite(D3, LOW);
+    digitalWrite(D4, LOW);
+  
+    digitalWrite(pinA, LOW);
+    digitalWrite(D1, HIGH);
+    delay(10);
+    digitalWrite(pinA, HIGH);
+    digitalWrite(D1, LOW);
+  
+    digitalWrite(pinB, LOW);
+    digitalWrite(D2, HIGH);
+    delay(10);
+    digitalWrite(D2, LOW);
+    digitalWrite(pinB, HIGH);
+    
+  }
+  
+  void displayTime(int h1){
+    if(h1==1){
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW);
+    }
+    else if(h1==2){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, LOW);   
+      digitalWrite(pinE, LOW);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, LOW);     
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+    else if(h1==3){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, LOW);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, LOW);     
+      digitalWrite(pinA, LOW);   
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW);  
+    }
+    else if(h1==4){
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, LOW);   
+      digitalWrite(pinG, LOW);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+    else if(h1==5){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, LOW);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, LOW);   
+      digitalWrite(pinG, LOW);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+    else if(h1==6){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, LOW);   
+      digitalWrite(pinE, LOW);   
+      digitalWrite(pinF, LOW);   
+      digitalWrite(pinG, LOW);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+    else if(h1==7){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+    else if(h1==8){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, LOW);   
+      digitalWrite(pinE, LOW);   
+      digitalWrite(pinF, LOW);   
+      digitalWrite(pinG, LOW);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW);  
+    }
+    else if(h1==9){
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, LOW);   
+      digitalWrite(pinG, LOW);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+    else{
+      digitalWrite(pinA, LOW);   
+      digitalWrite(pinB, LOW);   
+      digitalWrite(pinC, LOW);   
+      digitalWrite(pinD, LOW);   
+      digitalWrite(pinE, LOW);   
+      digitalWrite(pinF, LOW);   
+      digitalWrite(pinG, HIGH);
+      digitalWrite(D1,HIGH);  
+      delay(10);
+      digitalWrite(pinA, HIGH);   
+      digitalWrite(pinB, HIGH);   
+      digitalWrite(pinC, HIGH);   
+      digitalWrite(pinD, HIGH);   
+      digitalWrite(pinE, HIGH);   
+      digitalWrite(pinF, HIGH);   
+      digitalWrite(pinG, HIGH); 
+      digitalWrite(D1,LOW); 
+    }
+  }
