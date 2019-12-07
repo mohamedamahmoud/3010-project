@@ -1,3 +1,6 @@
+//@author Mohammed-Yasir Suara
+//SN: 101088810
+
 #include <FastLED.h>
 #include <Wire.h>
 #include "RTClib.h"
@@ -91,7 +94,9 @@ void checkInput(){
   }
 }
 
-//insert citation
+/*@author Leon van den Beukel (displayTime)
+ https://github.com/leonvandenbeukel/3D-7-Segment-Digital-Clock (displayTime)
+*/
 
 void displayTime(int index, int number) {
 
@@ -144,6 +149,23 @@ void muteAlarm(){
   }
   else{
     digitalRead(alarmButton==LOW);
+    FastLED.show()
+  }
+}
+
+void changeLED(){
+  //get LED colour from Pi;
+  if(recolour==RED){
+    for(i=0; i<30; i++){
+     LEDs[i]=CRGB::Red;
+  }
+  else if(recolour==GREEN){
+    for(i=0; i<30; i++){
+     LEDs[i]=CRGB::Green;
+  }
+   else{
+     LEDs[i]=CRGB::Blue;
   }
   
 }
+
