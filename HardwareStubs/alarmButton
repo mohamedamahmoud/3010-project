@@ -1,0 +1,39 @@
+public class alarmButton {
+            	private boolean mute = false; //Button starts off unmuted
+            	
+            	//If alarm button was hit
+            	public void buttonHit(){
+                            	mute = true;
+            	}
+ 
+            	//Realizes what state the button is in, and upon hit it mutes the button
+            	public boolean triggeralarmButton(){
+                            	if (buttonHit()){
+                                            	mute = true;
+                            	}          	
+                            	else{
+                                            	return false;
+                            	}
+            	}
+}
+
+//Stub class for the alarm button, the system pretends the button was hit and system was muted
+class stubAlarmButton implements alarmButton{
+            	privaalarte boolean mute = false;
+            	public void activated() {
+                            	mute = true;
+            	}
+}
+
+//Test case for the execution of alarmButton
+public void testalarmButton() throws Exception {
+            	try{
+            	            	alarmButton alarmButton = new alarmButton();
+            	            	alarmButton.buttonHit(new stubAlarmButton());
+                            	mute = true;
+            	}
+            	catch (NullPointerException e){
+            	            	System.out.println (“Button not found”);
+            	}
+ 
+}
