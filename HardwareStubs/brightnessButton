@@ -1,0 +1,45 @@
+
+public class brightnessButton {
+            	//1 = 25%, 2 = 50%, 3 = 100%
+            	private int brightness = 2; //Brightness starts at 50%
+            	//If brightness button was hit
+            	public void buttonHit(){
+                            	brightness += 1;
+if (brightness == 4){
+                                                            	brightness = 1;
+                                            	}
+            	}
+//Realizes what state the button is in, and upon hit it cycles through the different brightness’
+            	public boolean triggeralarmButton(){
+                            	if (buttonHit()){
+                                            	brightness += 1;
+                            	}          	
+                            	else{
+                                            	return -1;
+                            	}
+            	}
+}
+
+//Stub class for the brightness button, the system pretends the button was hit and brightness will be cycled
+class stubBrightnessButton implements brightnessButton{
+            	private int brightness = 2;
+            	public void activated() {
+                            	brightnes += 1;
+if (brightness == 4){
+                                                            	brightness = 1;
+                                            	}
+            	}          	
+}
+
+//Test case for the execution of brightnessButton
+public void testbrightnessButton() throws Exception {
+            	try{
+            	            	brightnessButton brightnessButton = new brightnessButton();
+            	            	brightnessButton.buttonHit(new stubBrightnessButton());
+                            	brightness += 1;
+            	}
+            	catch (NullPointerException e){
+            	            	System.out.println (“Button not found”);
+            	}
+ 
+}
